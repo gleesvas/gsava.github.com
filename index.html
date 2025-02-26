@@ -62,17 +62,6 @@
             text-align: center;
         }
 
-        .about h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .about p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
         .services {
             padding: 4rem 2rem;
             background-color: #fff;
@@ -84,15 +73,22 @@
             margin-bottom: 2rem;
         }
 
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
         .service {
-            display: inline-block;
-            width: 30%;
-            margin: 1rem;
+            flex: 1 1 300px;
+            max-width: 320px;
             background-color: #f9f9f9;
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
         }
 
         .service:hover {
@@ -121,11 +117,6 @@
             .services h2 {
                 font-size: 2rem;
             }
-            .service {
-                width: 80%;
-                display: block;
-                margin: 1rem auto;
-            }
         }
 
         @media (max-width: 480px) {
@@ -144,12 +135,6 @@
             }
             .about p {
                 font-size: 1rem;
-            }
-            .service {
-                width: 100%;
-            }
-            .footer p {
-                font-size: 0.9rem;
             }
         }
     </style>
@@ -170,17 +155,19 @@
 
     <section id="services" class="services">
         <h2>Hizmetlerimiz</h2>
-        <div class="service">
-            <h3>Web Tasarım</h3>
-            <p>Modern ve kullanıcı dostu web tasarımları.</p> 
-        </div>
-        <div class="service">
-            <h3>SEO Optimizasyonu</h3>
-            <p>Web sitenizi Google'da üst sıralara taşıyın.</p>
-        </div>
-        <div class="service">
-            <h3>Grafik Tasarım</h3>
-            <p>Marka kimliğiniz için benzersiz tasarımlar.</p>
+        <div class="service-container">
+            <div class="service">
+                <h3>Web Tasarım</h3>
+                <p>Modern ve kullanıcı dostu web tasarımları.</p> 
+            </div>
+            <div class="service">
+                <h3>SEO Optimizasyonu</h3>
+                <p>Web sitenizi Google'da üst sıralara taşıyın.</p>
+            </div>
+            <div class="service">
+                <h3>Grafik Tasarım</h3>
+                <p>Marka kimliğiniz için benzersiz tasarımlar.</p>
+            </div>
         </div>
     </section>
 
